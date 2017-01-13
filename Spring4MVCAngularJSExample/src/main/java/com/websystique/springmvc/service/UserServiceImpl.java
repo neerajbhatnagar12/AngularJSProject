@@ -34,6 +34,7 @@ public class UserServiceImpl implements UserService{
 	}
 	
 	public User findByName(String name) {
+		System.out.println("In findByName method");
 		for(User user : users){
 			if(user.getUsername().equalsIgnoreCase(name)){
 				return user;
